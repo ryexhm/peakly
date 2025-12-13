@@ -44,7 +44,6 @@ body {
 }
 .icon { width:24px; height:24px; }
 
-/* Main scrollable content */
 .content {
     margin-top:90px;
     margin-bottom:120px;
@@ -62,7 +61,6 @@ h2, h3 {
     font-size:1.1rem;
 }
 
-/* Shelf */
 .shelf {
     display: flex;
     justify-content: space-between;
@@ -86,8 +84,19 @@ h2, h3 {
     object-fit: cover;
 }
 
+.map-container{
+    margin-top: 0px;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+}
+.map-container img{
+    width: 93%;
+    
+    align-self: center;
+    height: auto;
+}
 
-/* Community List */
 .community-item {
     background:#d6eef7;
     border-radius:25px;
