@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main_style.css') }}">
+</head>
+<body>
+
+
+<div class="pill-bar leaderboard">
+    <svg class="pill-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#41B8D5"/>
+        <image x="1.5" y="1.75" height="20" width="20" href="{{ url_for('static', filename='images/trophy.png') }}"/>
+    </svg>
+    <span style="font-size: medium;">LEADERBOARD</span>
+</div>
+
+<div class="pill-bar alert">
+    <svg class="pill-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#831919"/>
+        <image x="1.5" y="1.75" height="20" width="20" href="{{ url_for('static', filename='images/o.png') }}"/>
+    </svg>
+    <span style="font-size: medium;">CONSULTATION IS IN 3 MINS</span>
+</div>
+
+<div class="content">
+
+    <h2>GOALS</h2>
+
+    <div class="goals-row">
+        <div class="goal-item">
+            <div class="circle-ring ring45">
+                <img src="{{ url_for('static', filename='images/dumb.png') }}" class="goal-img">
+            </div>
+            <p style="font-size: small;">WORKOUT 67%</p>
+        </div>
+
+        <div class="goal-item">
+            <div class="circle-ring ring34">
+                <img src="{{ url_for('static', filename='images/chick.png') }}" class="goal-img">
+            </div>
+            <p style="font-size: small">DIET 67%</p>
+        </div>
+
+        <div class="goal-item">
+            <div class="circle-ring ring67">
+                <img src="{{ url_for('static', filename='images/shoe.png') }}" class="goal-img">
+            </div>
+            <p style="font-size: small">STEPS 67%</p>
+        </div>
+    </div>
+
+    <h2>STATS</h2>
+
+    <div class="stat-block">
+        <span>WATER</span>
+        <div class="bar"><div class="fill fill40"></div></div>
+    </div>
+
+    <div class="stat-block">
+        <span>CALORIES</span>
+        <div class="bar"><div class="fill fill60"></div></div>
+    </div>
+
+    <div class="stat-block">
+        <span>MACROS</span>
+        <div class="bar"><div class="fill fill55"></div></div>
+    </div>
+
+</div>
+
+<div class="bottom-bar">
+    <a href="/social" class="circle-btn">
+        <div class="notif">3</div>
+        <img class="icon-img" src="{{ url_for('static', filename='images/megaphone.png') }}" alt="">
+    </a>
+
+    <a href="/" class="circle-btn">
+       <img class="icon-img" src="{{ url_for('static', filename='images/lupus.png') }}" alt="">
+    </a>
+
+    <a href="/profile" class="circle-btn">
+        <img class="icon-img" src="{{ url_for('static', filename='images/profile.png') }}" alt="">
+    </a>
+</div>
+
+</body>
+</html>

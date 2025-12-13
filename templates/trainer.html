@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tariner Yasha</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fafafa;
+        padding-bottom: 120px; 
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .sub-info {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 8px;
+        line-height: 1.4;
+    }
+
+    .profile-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #d7f1f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .profile-img {
+        width: 140%;
+        height: 140%;
+        object-fit: contain;
+    }
+
+    .badges {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 25px auto;
+        max-width: 95%;
+    }
+
+    .badges img {
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .bottom-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 10px;
+        z-index: 20;
+    }
+    .circle-btn {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #d7f1f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .icon-img {
+        width: 140%;
+        height: 140%;
+        object-fit: contain;
+        object-position: center;
+        pointer-events: none;
+    }
+    .notif {
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        background: #e64b4b;
+        color: #fff;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>MUNIRA WAHEED</h1>
+        <div class="sub-info">
+            SWIMMING TRAINER<br>
+            100M PB - 14.4S<br>
+            MALÉ, MALDIVES
+        </div>
+    </div>
+
+    <div class="profile-row">
+        <div class="profile-pic">
+            <img class="profile-img" src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile">
+        </div>
+    </div>
+
+    <div class="badges">
+        <img src="{{ url_for('static', filename='images/chat.png') }}" alt="Hydrate Badge" style="scale: 70%;">
+        <img src="{{ url_for('static', filename='images/save.png') }}" alt="Active Badge" style="scale: 70%;">
+        <img src="{{ url_for('static', filename='images/share.png') }}" alt="Healthy Badge" style="scale: 70%;">
+        <img src="{{ url_for('static', filename='images/bell.png') }}" alt="Marathon Badge" style="scale: 70%;">
+    </div>
+
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='images/photo1.png') }}" style="scale: 120%;">
+        <img src="{{ url_for('static', filename='images/photo2.png') }}" style="scale: 116.56%;">
+        <img src="{{ url_for('static', filename='images/pic3.jpg') }}">
+        <img src="{{ url_for('static', filename='images/pic4.jpg') }}">
+        <img src="{{ url_for('static', filename='images/pic5.jpg') }}">
+        <img src="{{ url_for('static', filename='images/pic6.jpg') }}">
+        <img src="{{ url_for('static', filename='images/pic7.jpg') }}">
+        <img src="{{ url_for('static', filename='images/pic8.jpg') }}">
+        <img src="{{ url_for('static', filename='images/pic9.jpg') }}">
+    </div>
+</div>
+
+<!-- Bottom Bar (unchanged) -->
+<div class="bottom-bar">
+    <a href="/social" class="circle-btn">
+        <div class="notif">3</div>
+        <img class="icon-img" src="{{ url_for('static', filename='images/megaphone.png') }}" alt="">
+    </a>
+
+    <a href="/" class="circle-btn">
+        <img class="icon-img" src="{{ url_for('static', filename='images/lupus.png') }}" alt="">
+    </a>
+
+    <a href="/profile" class="circle-btn">
+        <img class="icon-img" src="{{ url_for('static', filename='images/profile.png') }}" alt="">
+    </a>
+</div>
+
+</body>
+</html>
