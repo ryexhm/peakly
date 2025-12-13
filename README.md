@@ -19,3 +19,7 @@ Web app is not optimized for landscape display and may lead to unexpected behavi
 
 PACKAGES
 - Flask
+
+##TROUBLESHOOTING
+If being used on landscape display press `ctrl + shift + i`
+Then press `ctrl + shift + M` and it should display as a mobile device.
