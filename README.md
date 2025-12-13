@@ -12,7 +12,7 @@ Once installed run the `run.cmd` file to deploy the web app locally to both loca
 ### WARNING
 Web app is not optimized for landscape display and may lead to unexpected behaviour.
 
-##LANGUAGE & PACKAGES USED
+## LANGUAGE & PACKAGES USED
 - Python - backend
 - HTML - web layout
 - CSS - web styling
@@ -20,6 +20,6 @@ Web app is not optimized for landscape display and may lead to unexpected behavi
 PACKAGES
 - Flask
 
-##TROUBLESHOOTING
+## TROUBLESHOOTING
 If being used on landscape display press `ctrl + shift + i`
 Then press `ctrl + shift + M` and it should display as a mobile device.
